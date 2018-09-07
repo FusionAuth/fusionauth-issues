@@ -14,9 +14,9 @@ If you encounter a bug in one of our client libraries, please open an issue dire
 - https://github.com/FusionAuth/fusionauth-ruby-client/issues
 - https://github.com/FusionAuth/fusionauth-php-client/issues
 
-## Documentation bugs
-If you find a bug or some other mistake in our documentation, please open an issue directly on our documentation project. 
-- [https://github.com/FusionAuth/fusionauth-docs](https://github.com/FusionAuth/fusionauth-docs)
+## Site or documentation bugs
+If you find a bug or some other mistake on our site or in our documentation, please open an issue directly on our documentation project. 
+- [https://github.com/FusionAuth/fusionauth-site](https://github.com/FusionAuth/fusionauth-site)
 
 ## Enterprise Support
 Enterprise support is offered by FusionAuth, please contact us and let us know how we can help. Find our Contact section on  [https://fusionauth.io](https://fusionauth.io).
