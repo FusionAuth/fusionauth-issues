@@ -18,9 +18,9 @@ If you encounter a bug in one of our client libraries, please open an issue dire
 - https://github.com/FusionAuth/fusionauth-php-client/issues
 
 ## Security disclosures
-If you find a vulerability or other security related bug, please send a note to security@fusionauth.io before opening a GitHub issue. This will allow FusionAuth to assess the disclosure and prepare a fix prior to a public disclosure. 
+If you find a vulnerability or other security related bug, please send a note to security@fusionauth.io before opening a GitHub issue. This will allow us to assess the disclosure and prepare a fix prior to a public disclosure. 
 
-We are very interested in compensating anyone that can identify a security related bug or vulnerability in FusionAuth and properly disclose it to use.
+We are very interested in compensating anyone that can identify a security related bug or vulnerability and properly disclose it to use.
 
 ## Site or documentation bugs
 If you find a bug or some other mistake on our site or in our documentation, please open an issue directly on our documentation project. 
