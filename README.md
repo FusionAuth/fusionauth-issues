@@ -14,6 +14,7 @@ If you encounter a bug in one of our client libraries, please open an issue dire
 - https://github.com/FusionAuth/fusionauth-csharp-client/issues
 - https://github.com/FusionAuth/fusionauth-node-client/issues
 - https://github.com/FusionAuth/fusionauth-javascript-client/issues
+- https://github.com/FusionAuth/fusionauth-typescript-client/issues
 - https://github.com/FusionAuth/fusionauth-ruby-client/issues
 - https://github.com/FusionAuth/fusionauth-php-client/issues
 
