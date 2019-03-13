@@ -21,9 +21,8 @@ If you encounter a bug in one of our client libraries, please open an issue dire
 Our client libraries are built using a templating system, so if you find a typo in a comment, or some other syntax issue in the client library it is likely a bug in the template or JSON DSL. 
 
 - https://github.com/FusionAuth/fusionauth-client-builder
-
-- Client templates : https://github.com/FusionAuth/fusionauth-client-builder/tree/master/src/main/client
-- JSON DSL : https://github.com/FusionAuth/fusionauth-client-builder/tree/master/src/main/api 
+  - Client templates : https://github.com/FusionAuth/fusionauth-client-builder/tree/master/src/main/client
+  - JSON DSL : https://github.com/FusionAuth/fusionauth-client-builder/tree/master/src/main/api 
 
 
 ## Security disclosures
