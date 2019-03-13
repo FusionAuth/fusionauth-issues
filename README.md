@@ -18,6 +18,14 @@ If you encounter a bug in one of our client libraries, please open an issue dire
 - https://github.com/FusionAuth/fusionauth-ruby-client/issues
 - https://github.com/FusionAuth/fusionauth-php-client/issues
 
+Our client libraries are built using a templating system, so if you find a typo in a comment, or some other syntax issue in the client library it is likely a bug in the template or JSON DSL. 
+
+- https://github.com/FusionAuth/fusionauth-client-builder
+
+- Client templates : https://github.com/FusionAuth/fusionauth-client-builder/tree/master/src/main/client
+- JSON DSL : https://github.com/FusionAuth/fusionauth-client-builder/tree/master/src/main/api 
+
+
 ## Security disclosures
 If you find a vulnerability or other security related bug, please send a note to security@fusionauth.io before opening a GitHub issue. This will allow us to assess the disclosure and prepare a fix prior to a public disclosure. 
 
