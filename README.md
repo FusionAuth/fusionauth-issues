@@ -10,11 +10,14 @@ Just have a question? Please ask it on [StackOverflow](https://stackoverflow.com
 
 ## Client library bugs
 If you encounter a bug in one of our client libraries, please open an issue directly on the corresponding project. 
+- https://github.com/FusionAuth/fusionauth-angular-client/issues
 - https://github.com/FusionAuth/fusionauth-java-client/issues
 - https://github.com/FusionAuth/fusionauth-csharp-client/issues
 - https://github.com/FusionAuth/fusionauth-go-client/issues
+- https://github.com/FusionAuth/fusionauth-netcore-client/issues
 - https://github.com/FusionAuth/fusionauth-node-client/issues
 - https://github.com/FusionAuth/fusionauth-javascript-client/issues
+- https://github.com/FusionAuth/fusionauth-swift-client/issues
 - https://github.com/FusionAuth/fusionauth-typescript-client/issues
 - https://github.com/FusionAuth/fusionauth-ruby-client/issues
 - https://github.com/FusionAuth/fusionauth-php-client/issues
