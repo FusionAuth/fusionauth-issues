@@ -13,7 +13,7 @@ If you encounter a bug in one of our client libraries, please open an issue dire
 - https://github.com/FusionAuth/fusionauth-angular-client/issues
 - https://github.com/FusionAuth/fusionauth-java-client/issues
 - https://github.com/FusionAuth/fusionauth-csharp-client/issues
-- https://github.com/FusionAuth/fusionauth-go-client/issues
+- https://github.com/FusionAuth/go-client/issues
 - https://github.com/FusionAuth/fusionauth-netcore-client/issues
 - https://github.com/FusionAuth/fusionauth-node-client/issues
 - https://github.com/FusionAuth/fusionauth-javascript-client/issues
