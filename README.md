@@ -21,6 +21,7 @@ If you encounter a bug in one of our client libraries, please open an issue dire
 - https://github.com/FusionAuth/fusionauth-typescript-client/issues
 - https://github.com/FusionAuth/fusionauth-ruby-client/issues
 - https://github.com/FusionAuth/fusionauth-php-client/issues
+- https://github.com/FusionAuth/fusionauth-dart-client
 
 Our client libraries are built using a templating system, so if you find a typo in a comment, or some other syntax issue in the client library it is likely a bug in the template or JSON DSL. 
 
