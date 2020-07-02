@@ -9,6 +9,9 @@ about: Create a bug report to help us improve FusionAuth
 ### Description 
 A clear and concise description of what the bug is.
 
+### Affects versions
+List the version you are running, and any other versions you have attempted a recreated. 
+
 ### Steps to reproduce
 Steps to reproduce the behavior:
 1. Go to '...'
@@ -27,6 +30,7 @@ If applicable, add screenshots to help explain your problem.
  - Device: [e.g. Desktop, iPhone X, Pixel 3, etc]
  - OS: [e.g. iOS, macOS, Windows ME]
  - Browser + version [e.g. chrome, safari plus a version]
+ - Database [MySQL | PostgresSQL] & and version
 
 ### Additional context
 Add any other context about the problem here.
