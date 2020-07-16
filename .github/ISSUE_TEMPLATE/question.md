@@ -1,6 +1,6 @@
 ---
 name: Question
-about: Do you have a question about FusionAuth?
+about: Do you have a question about FusionAuth? Please visit the [FusionAuth forum](https://fusionauth.io/community/forum/).
 
 ---
 
