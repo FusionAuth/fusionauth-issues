@@ -8,6 +8,11 @@ Please only use this project to report or track issues with the product itself, 
 Just have a question? Please ask it on [StackOverflow](https://stackoverflow.com/questions/tagged/fusionauth) so the entire community can benefit. 
 - https://stackoverflow.com/questions/tagged/fusionauth
 
+## Guidelines
+1. Please be respectful and polite as you interact with the FusionAuth team and community through GitHub issues. 
+1. Please b constructive and informative when you open an issue so that we are able to quickly identify and resolve the issue.
+1. Please do not request updates on progress or deliver dates. If you have a paid edition of FusionAuth, please make these inqurires through your support channel.  Progress and updates will be added to the issue and you may optionally view upcoming features using the project view. https://github.com/FusionAuth/fusionauth-issues/projects/2
+
 ## Client library bugs
 If you encounter a bug in one of our client libraries, please open an issue directly on the corresponding project. 
 - https://github.com/FusionAuth/fusionauth-angular-client/issues
