@@ -5,8 +5,8 @@ Click on the **Issues** tab or click right [here](https://github.com/FusionAuth/
 
 Please only use this project to report or track issues with the product itself, if you have an issue with documentation or a client library see below for the correct place to report your issue.
 
-Just have a question? Please ask it on [StackOverflow](https://stackoverflow.com/questions/tagged/fusionauth) so the entire community can benefit. 
-- https://stackoverflow.com/questions/tagged/fusionauth
+Just have a question? Please ask it on [our forums](https://fusionauth.io/community/forum/) so the entire community can benefit. 
+- https://fusionauth.io/community/forum/
 
 ## Client library bugs
 If you encounter a bug in one of our client libraries, please open an issue directly on the corresponding project. 
