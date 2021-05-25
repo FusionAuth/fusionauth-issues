@@ -32,7 +32,7 @@ If applicable, add screenshots to help explain your problem.
  - Browser + version [e.g. chrome, safari plus a version]
  - Database [MySQL | PostgresSQL] & and version
 
-## Community guidelines
+### Community guidelines
 All issues filed in this repository must abide by the [FusionAuth community guidelines](https://fusionauth.io/community/forum/topic/1000/code-of-conduct).
 
 ### Additional context

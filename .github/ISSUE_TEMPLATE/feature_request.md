@@ -18,7 +18,7 @@ A clear and concise description of any alternative solutions or workarounds you'
 ### Additional context
 Add any other context or screenshots about the feature request here.
 
-## Community guidelines
+### Community guidelines
 All issues filed in this repository must abide by the [FusionAuth community guidelines](https://fusionauth.io/community/forum/topic/1000/code-of-conduct).
 
 ### How to vote
