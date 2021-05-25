@@ -9,7 +9,7 @@ Just have a question? Please ask it on [our forums](https://fusionauth.io/commun
 - https://fusionauth.io/community/forum/
 
 ## Guidelines
-1. Please be respectful and polite as you interact with the FusionAuth team and community through GitHub issues. 
+1. Please be respectful and polite as you interact with the FusionAuth team and community through GitHub issues. You may review our [community guidelines](https://fusionauth.io/community/forum/topic/1000/code-of-conduct) for more specific guidance about what is allowed and prohibited.
 1. Please be constructive and informative when you open an issue so that we are able to quickly identify and resolve the issue.
 1. Please do not request updates on progress or deliver dates. If you have a paid edition of FusionAuth, please make these inqurires through your support channel.  Progress and updates will be added to the issue and you may optionally view upcoming features using the project view. https://github.com/FusionAuth/fusionauth-issues/projects/2
 
