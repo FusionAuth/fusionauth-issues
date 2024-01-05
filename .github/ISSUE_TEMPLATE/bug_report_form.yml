@@ -6,7 +6,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to fill out this bug report!
+        Thanks for taking the time to fill out this bug report. We really appreciate it!
   - type: textarea
     id: description
     attributes:
@@ -34,4 +34,5 @@ body:
   - type: markdown
     attributes:
       value: |
-        "All issues filed in this repository must abide by the [FusionAuth community guidelines](https://fusionauth.io/community/forum/topic/1000/code-of-conduct)."
+        ### Community guidelines\n
+        All issues filed in this repository must abide by the [FusionAuth community guidelines](https://fusionauth.io/community/forum/topic/1000/code-of-conduct).
