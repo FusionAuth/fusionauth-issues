@@ -9,8 +9,11 @@ about: Create a bug report to help us improve FusionAuth
 ### Description 
 A clear and concise description of what the bug is.
 
-### Affects versions
+### Observed versions
 List the version you are running, and any other versions you have attempted a recreated. 
+
+### Affects versions
+The version, or versions where this bug exists. If you do not know, please leave blank for now. 
 
 ### Steps to reproduce
 Steps to reproduce the behavior:
@@ -23,7 +26,7 @@ Steps to reproduce the behavior:
 A clear and concise description of what you expected to happen.
 
 ### Screenshots
-If applicable, add screenshots to help explain your problem.
+If applicable, add screenshots to help explain your problem. Delete this section if it is not applicable. 
 
 ### Platform
 (Please complete the following information)
