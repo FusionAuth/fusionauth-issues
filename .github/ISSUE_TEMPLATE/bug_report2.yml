@@ -27,8 +27,7 @@ body:
     id: affects_versions
     attributes:
       label: Affects Versions
-      description: What versions of FusionAuth will be affected by this bug? |
-        If you do not know, just leave this blank and a FusionAuth engineer will figure it out.
+      description: What versions of FusionAuth will be affected by this bug? If you do not know, just leave this blank and a FusionAuth engineer will figure it out.
       placeholder: "Example: >= 1.42.0, or 1.42.0 - 1.44.1"
     validations:
       required: false
