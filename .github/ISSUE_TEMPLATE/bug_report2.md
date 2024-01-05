@@ -1,5 +1,6 @@
 ---
 name: Bug report 2
+about: Create a bug report to help us improve FusionAuth
 description: Create a bug report to help us improve FusionAuth
 title: "[Bug]: "
 
