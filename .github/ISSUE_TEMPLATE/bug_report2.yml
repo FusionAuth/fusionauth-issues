@@ -1,4 +1,4 @@
-name: Bug Report
+name: Bug Report (Do not use this yet)
 description: Create a bug report to help us improve FusionAuth
 title: "[Bug]: "
 
@@ -31,3 +31,7 @@ body:
       placeholder: "Example: >= 1.42.0, or 1.42.0 - 1.44.1"
     validations:
       required: false
+  - type: markdown
+    attributes:
+      value: |
+        "All issues filed in this repository must abide by the [FusionAuth community guidelines](https://fusionauth.io/community/forum/topic/1000/code-of-conduct)."
