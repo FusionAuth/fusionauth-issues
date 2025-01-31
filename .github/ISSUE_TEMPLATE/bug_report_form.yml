@@ -31,6 +31,14 @@ body:
       placeholder: "Example: >= 1.42.0, or 1.42.0 - 1.44.1"
     validations:
       required: false
+  - type: input
+    id: alternatives_workarounds
+    attributes:
+      label: Alternatives / Workarounds
+      description: If you have found a workaround, please share what you did with others.
+      placeholder: "Example: Use the API to update the field instead."
+    validations:
+      required: false
   - type: markdown
     attributes:
       value: |
