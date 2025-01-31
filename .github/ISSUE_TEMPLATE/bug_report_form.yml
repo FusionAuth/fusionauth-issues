@@ -31,7 +31,7 @@ body:
       placeholder: "Example: >= 1.42.0, or 1.42.0 - 1.44.1"
     validations:
       required: false
-  - type: input
+  - type: textarea
     id: alternatives_workarounds
     attributes:
       label: Alternatives / Workarounds
