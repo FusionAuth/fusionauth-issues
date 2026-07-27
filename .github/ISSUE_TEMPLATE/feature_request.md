@@ -4,8 +4,6 @@ about: Suggest a new feature for FusionAuth
 
 ---
 
-## (Put feature request title here)
-
 ### Problem
 A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
 

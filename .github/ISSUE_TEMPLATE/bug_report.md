@@ -4,8 +4,6 @@ about: Create a bug report to help us improve FusionAuth
 
 ---
 
-## (Put bug title here)
-
 ### Description 
 A clear and concise description of what the bug is.
 
