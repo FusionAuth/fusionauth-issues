@@ -1,4 +1,7 @@
 # FusionAuth Issues
+
+> **Before you file:** if you have a paid FusionAuth plan or a support contract, please bring bugs and feature requests to our support team rather than opening an issue here. See [Support for paid plans](#support-for-paid-plans) below. Using FusionAuth Community? You are in the right place — please open an issue as usual.
+
 We hope you love using FusionAuth, but in case you encounter a bug or an issue with the software please do let us know.
 
 Click on the **Issues** tab or click right [here](https://github.com/FusionAuth/fusionauth-issues/issues/new/choose) to open an issue.
@@ -11,7 +14,7 @@ Just have a question? Please ask it on [our forums](https://fusionauth.io/commun
 ## Guidelines
 1. Please be respectful and polite as you interact with the FusionAuth team and community through GitHub issues. You may review our [community guidelines](https://fusionauth.io/community/forum/topic/1000/code-of-conduct) for more specific guidance about what is allowed and prohibited.
 1. Please be constructive and informative when you open an issue so that we are able to quickly identify and resolve the issue.
-1. Please do not request updates on progress or deliver dates. If you have a paid edition of FusionAuth, please make these inqurires through your support channel.  Progress and updates will be added to the issue and you may optionally view upcoming features using the project view. https://github.com/FusionAuth/fusionauth-issues/projects/2
+1. Please do not request progress updates or delivery dates in issue comments. If you have a paid plan or a support contract, please make those inquiries through support — see [Support for paid plans](#support-for-paid-plans).
 
 ## Client library bugs
 If you encounter a bug in one of our client libraries, please open an issue directly on the corresponding project. 
@@ -44,5 +47,15 @@ We are very interested in compensating anyone that can identify a security relat
 If you find a bug or some other mistake on our site or in our documentation, please open an issue directly on our documentation project. 
 - [https://github.com/FusionAuth/fusionauth-site](https://github.com/FusionAuth/fusionauth-site)
 
-## Enterprise Support
-Enterprise support is offered by FusionAuth, please contact us and let us know how we can help. Find our Contact section on  [https://fusionauth.io](https://fusionauth.io).
+## Support for paid plans
+If you have a paid FusionAuth plan or a support contract, please file bugs and feature requests through support rather than here. Support is the fastest path to a FusionAuth engineer, and it lets us connect your request to your account, your version, and your environment.
+
+There are two ways to reach us:
+- Open a ticket in your [FusionAuth account portal](https://account.fusionauth.io)
+- Email us at support@fusionauth.io
+
+Everything you send to support is read, triaged, and considered exactly as before. Bugs go to the same engineers and feature requests go into the same planning process — this changes how requests reach us, not whether we act on them.
+
+You are also welcome to contact support at any time for an update on anything you have already filed, including issues you opened in this repository.
+
+Interested in a paid plan with support? Please see [our pricing page](https://fusionauth.io/pricing).
