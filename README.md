@@ -1,6 +1,6 @@
 # FusionAuth Issues
 
-> **Before you file:** if you have a paid FusionAuth plan or a support contract, please bring bugs and feature requests to our support team rather than opening an issue here. See [Support for paid plans](#support-for-paid-plans) below. Using FusionAuth Community? You are in the right place — please open an issue as usual.
+> **Before you file:** if you have a paid FusionAuth plan or a support contract, please bring suspected issues and feature requests to our support team rather than opening an issue here. This will help us efficiently track and respond to your requests. See [Support for paid plans](#support-for-paid-plans) below. Using FusionAuth Community? You are in the right place — please open an issue as usual.
 
 We hope you love using FusionAuth, but in case you encounter a bug or an issue with the software please do let us know.
 
@@ -48,13 +48,13 @@ If you find a bug or some other mistake on our site or in our documentation, ple
 - [https://github.com/FusionAuth/fusionauth-site](https://github.com/FusionAuth/fusionauth-site)
 
 ## Support for paid plans
-If you have a paid FusionAuth plan or a support contract, please file bugs and feature requests through support rather than here. Support is the fastest path to a FusionAuth engineer, and it lets us connect your request to your account, your version, and your environment.
+If you have a paid FusionAuth plan or a support contract, please bring suspected issues and feature requests to our support team rather than opening an issue here. This will help us efficiently track and respond to your requests, and it lets us connect them to your account, your version, and your environment.
 
 There are two ways to reach us:
 - Open a ticket in your [FusionAuth account portal](https://account.fusionauth.io)
 - Email us at support@fusionauth.io
 
-Everything you send to support is read, triaged, and considered exactly as before. Bugs go to the same engineers and feature requests go into the same planning process — this changes how requests reach us, not whether we act on them.
+Everything you send to support is read, triaged, and considered exactly as before. Suspected issues are investigated by the same engineers and feature requests go into the same planning process — this changes how requests reach us, not whether we act on them.
 
 You are also welcome to contact support at any time for an update on anything you have already filed, including issues you opened in this repository.
 

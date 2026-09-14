@@ -4,7 +4,7 @@ about: Create a bug report to help us improve FusionAuth
 
 ---
 
-> **Paid plan or support contract?** Please open a ticket in your [account portal](https://account.fusionauth.io) or email support@fusionauth.io instead of filing here — [more detail](https://github.com/FusionAuth/fusionauth-issues#support-for-paid-plans).
+> **Paid plan or support contract?** Please bring suspected issues and feature requests to our support team rather than opening an issue here — open a ticket in your [account portal](https://account.fusionauth.io) or email support@fusionauth.io. This will help us efficiently track and respond to your requests. [More detail](https://github.com/FusionAuth/fusionauth-issues#support-for-paid-plans).
 
 ### Description 
 A clear and concise description of what the bug is.

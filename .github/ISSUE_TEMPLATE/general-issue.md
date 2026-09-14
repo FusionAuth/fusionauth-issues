@@ -4,7 +4,7 @@ about: Use this for a general comment or issue you've encountered
 
 ---
 
-> **Paid plan or support contract?** Please open a ticket in your [account portal](https://account.fusionauth.io) or email support@fusionauth.io instead of filing here — [more detail](https://github.com/FusionAuth/fusionauth-issues#support-for-paid-plans).
+> **Paid plan or support contract?** Please bring suspected issues and feature requests to our support team rather than opening an issue here — open a ticket in your [account portal](https://account.fusionauth.io) or email support@fusionauth.io. This will help us efficiently track and respond to your requests. [More detail](https://github.com/FusionAuth/fusionauth-issues#support-for-paid-plans).
 
 ### Description
 Provide a description of the problem you have or just leave us a general comment here.
