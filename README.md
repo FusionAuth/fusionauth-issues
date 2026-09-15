@@ -51,7 +51,7 @@ If you find a bug or some other mistake on our site or in our documentation, ple
 If you have a paid FusionAuth plan or a support contract, please bring suspected issues and feature requests to our support team rather than opening an issue here. This will help us efficiently track and respond to your requests, and it lets us connect them to your account, your version, and your environment.
 
 There are two ways to reach us:
-- Open a ticket in your [FusionAuth account portal](https://account.fusionauth.io)
+- Open a ticket on the [support page in your FusionAuth account portal](https://account.fusionauth.io/account/support/)
 - Email us at support@fusionauth.io
 
 Everything you send to support is read, triaged, and considered exactly as before. Suspected issues are investigated by the same engineers and feature requests go into the same planning process — this changes how requests reach us, not whether we act on them.
