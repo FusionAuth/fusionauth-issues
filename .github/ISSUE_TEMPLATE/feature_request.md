@@ -4,6 +4,8 @@ about: Suggest a new feature for FusionAuth
 
 ---
 
+> **Paid plan or support contract?** Please bring suspected issues and feature requests to our support team rather than opening an issue here — open a ticket in your [account portal](https://account.fusionauth.io/account/support/) or email support@fusionauth.io. This will help us efficiently track and respond to your requests. [More detail](https://github.com/FusionAuth/fusionauth-issues#support-for-paid-plans).
+
 ### Problem
 A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
 
