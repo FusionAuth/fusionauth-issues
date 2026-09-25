@@ -5,16 +5,17 @@ This repository provides a place for FusionAuth users to report suspected issues
 ```mermaid
 flowchart LR
     Start{What do you need help with?}
-    Start -->|<b>Question?</b>| Forum[Ask in the <a href="https://fusionauth.io/community/forum/">forum</a>]
-    Start -->|<b>Security vulnerability?</b>| SecurityNode[Contact security at <br><a href="https://fusionauth.io/security">fusionauth.io/security</a>]
-    Start -->|<b>Problem?</b>| LicenseCheck{Have a paid license?}
-    
+
     LicenseCheck -->|<b>Yes</b>| Support[Contact support at <br><a href="https://account.fusionauth.io/account/support/">account.fusionauth.io/support</a><br> or email <a href="mailto:support@fusionauth.io">support@fusionauth.io</a>]
     LicenseCheck -->|<b>No</b>| IssueType{What type of issue?}
     
     IssueType -->|<b>Client library bug?</b>| ClientNode[Report the bug in a <br><a href="#client-library-bugs">client library or templating library</a>]
     IssueType -->|<b>Documentation problem?</b>| DocsNode[File an issue at <br><a href="https://github.com/FusionAuth/fusionauth-site/issues">fusionauth-site/issues</a>]
     IssueType -->|<b>Otherwise</b>| ReportNode[Report here at <br><a href="https://github.com/FusionAuth/fusionauth-issues/issues/new/choose">fusionauth-issues/issues</a>]
+
+    Start -->|<b>Question?</b>| Forum[Ask in the <a href="https://fusionauth.io/community/forum/">forum</a>]
+    Start -->|<b>Security vulnerability?</b>| SecurityNode[Contact security at <br><a href="https://fusionauth.io/security">fusionauth.io/security</a>]
+    Start -->|<b>Problem?</b>| LicenseCheck{Have a paid license?}
 ```
 
 ## Guidelines
