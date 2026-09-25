@@ -3,7 +3,7 @@
 This repository provides a place for FusionAuth users to report suspected issues and feature requests.
 
 ```mermaid
-flowchart LR
+flowchart TD
     Start{What do you need help with?}
 
     LicenseCheck -->|<b>Yes</b>| Support[Contact support at <br><a href="https://account.fusionauth.io/account/support/">account.fusionauth.io/support</a><br> or email <a href="mailto:support@fusionauth.io">support@fusionauth.io</a>]
