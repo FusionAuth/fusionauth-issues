@@ -5,14 +5,14 @@ This repository provides a place for FusionAuth users to report suspected issues
 ```mermaid
 flowchart LR
     Start{What do you need help with?}
-    Start -->|Question?| Forum[Ask in the <a href="https://fusionauth.io/community/forum/">forum</a>]
-    Start -->|Problem?| IssueType{What type of issue?}
+    Start -->|<b>Question?</b>| Forum[Ask in the <a href="https://fusionauth.io/community/forum/">forum</a>]
+    Start -->|<b>Problem?</b>| IssueType{What type of issue?}
     
-    IssueType -->|Paid license?| Support[Contact support at <a href="https://account.fusionauth.io/account/support/">account.fusionauth.io/support</a> or email <a href="mailto:support@fusionauth.io">support@fusionauth.io</a>]
-    IssueType -->|Security vulnerability?| SecurityNode[Contact security at <a href="https://fusionauth.io/security">fusionauth.io/security</a>]
-    IssueType -->|Client library bug?| ClientNode[Report the bug in a <a href="#client-library-bugs">client library or templating library</a>]
-    IssueType -->|Documentation problem?| DocsNode[File an issue at <a href="https://github.com/FusionAuth/fusionauth-site/issues">fusionauth-site/issues</a>]
-    IssueType -->|Otherwise| ReportNode[Report here at <a href="https://github.com/FusionAuth/fusionauth-issues/issues/new/choose">fusionauth-issues/issues</a>]
+    IssueType -->|<b>Paid license?</b>| Support[Contact support at <a href="https://account.fusionauth.io/account/support/">account.fusionauth.io/support</a> or email <a href="mailto:support@fusionauth.io">support@fusionauth.io</a>]
+    IssueType -->|<b>Security vulnerability?</b>| SecurityNode[Contact security at <a href="https://fusionauth.io/security">fusionauth.io/security</a>]
+    IssueType -->|<b>Client library bug?</b>| ClientNode[Report the bug in a <a href="#client-library-bugs">client library or templating library</a>]
+    IssueType -->|<b>Documentation problem?</b>| DocsNode[File an issue at <a href="https://github.com/FusionAuth/fusionauth-site/issues">fusionauth-site/issues</a>]
+    IssueType -->|<b>Otherwise</b>| ReportNode[Report here at <a href="https://github.com/FusionAuth/fusionauth-issues/issues/new/choose">fusionauth-issues/issues</a>]
 ```
 
 ## Guidelines
