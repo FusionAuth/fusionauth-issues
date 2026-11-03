@@ -10,7 +10,7 @@ flowchart TD
     Start -->|<b>Security vulnerability?</b>| SecurityNode[Contact security at <br><a href="https://fusionauth.io/security">fusionauth.io/security</a>]
     Start -->|<b>Problem?</b>| LicenseCheck{Have a paid license?}
 
-    LicenseCheck -->|<b>Yes</b>| Support[Contact support at <br><a href="https://account.fusionauth.io/account/support/">account.fusionauth.io/support</a><br> or email <a href="mailto:support@fusionauth.io">support@fusionauth.io</a>]
+    LicenseCheck -->|<b>Yes</b>| Support[Contact support at <br><a href="https://account.fusionauth.io/account/support/">account.fusionauth.io/account/support/</a><br> or email <a href="mailto:support@fusionauth.io">support@fusionauth.io</a>]
     LicenseCheck -->|<b>No</b>| IssueType{What type of issue?}
     
     IssueType -->|<b>Client library bug?</b>| ClientNode[Report the bug in a <br><a href="https://github.com/FusionAuth/fusionauth-issues#client-library-bugs">client library or templating library</a>]
