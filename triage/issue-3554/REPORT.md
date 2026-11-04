@@ -2,7 +2,8 @@
 
 Relates to #3554.
 
-**Verdict:** confirmed  
+**Verdict:** confirmed
+
 **Confidence:** high
 
 System reset changes Tenant Manager's access-token signing-key assignment to the
