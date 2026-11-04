@@ -21,7 +21,7 @@ jobs:
     permissions:
       contents: read
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v7
 
       - name: Prepare host for the search engine
         run: sudo sysctl -w vm.max_map_count=262144
