@@ -1,0 +1,55 @@
+{
+  "base": "http://localhost:9011",
+  "version": "1.70.0",
+  "results": [
+    {
+      "case": "get-normal",
+      "status": 200,
+      "title": "Register",
+      "unexpectedException": false,
+      "registrationForm": true
+    },
+    {
+      "case": "get-email",
+      "status": 500,
+      "title": "Error",
+      "unexpectedException": true,
+      "registrationForm": false
+    },
+    {
+      "case": "get-firstName",
+      "status": 500,
+      "title": "Error",
+      "unexpectedException": true,
+      "registrationForm": false
+    },
+    {
+      "case": "post-no-state",
+      "status": 500,
+      "title": "Error",
+      "unexpectedException": true,
+      "registrationForm": false
+    },
+    {
+      "case": "post-garbage-state",
+      "status": 500,
+      "title": "Error",
+      "unexpectedException": false,
+      "registrationForm": false
+    },
+    {
+      "case": "post-garbage-state-no-user",
+      "status": 500,
+      "title": "Error",
+      "unexpectedException": false,
+      "registrationForm": false
+    },
+    {
+      "case": "post-no-state-no-user",
+      "status": 200,
+      "title": "Register",
+      "unexpectedException": false,
+      "registrationForm": true
+    }
+  ]
+}
