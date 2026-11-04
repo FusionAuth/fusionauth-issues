@@ -1,0 +1,51 @@
+{
+  "base": "http://localhost:9011",
+  "before": {
+    "version": "1.70.1",
+    "defaultTenantId": "3ea86655-879c-4e38-a228-2d1b2a53943d",
+    "defaultAccessTokenKeyId": "c9fb890c-e1c4-4fbb-8e23-3284fb6ab858",
+    "tenantManagerApplicationId": "156f2f73-a45c-4a86-a033-eda488ef7a9e",
+    "tenantManagerAccessTokenKeyId": "9a77b03a-6153-4479-8571-70a807b0f1d6",
+    "tenantManagerIdTokenKeyId": "80ccfe1e-209e-1725-bb37-6c4214dea375",
+    "tenantManagerJwtEnabled": true,
+    "sharesDefaultAccessTokenKey": false
+  },
+  "after": {
+    "version": "1.70.1",
+    "defaultTenantId": "3ea86655-879c-4e38-a228-2d1b2a53943d",
+    "defaultAccessTokenKeyId": "48e3572d-d11e-400a-a367-7bfaba762e88",
+    "tenantManagerApplicationId": "156f2f73-a45c-4a86-a033-eda488ef7a9e",
+    "tenantManagerAccessTokenKeyId": "48e3572d-d11e-400a-a367-7bfaba762e88",
+    "tenantManagerIdTokenKeyId": "80ccfe1e-209e-1725-bb37-6c4214dea375",
+    "tenantManagerJwtEnabled": true,
+    "sharesDefaultAccessTokenKey": true
+  },
+  "resetResponses": [
+    {
+      "method": "GET",
+      "path": "/admin/system/reset/",
+      "status": 202
+    },
+    {
+      "method": "GET",
+      "path": "/admin/system/reset/",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/admin/system/reset",
+      "status": 302
+    },
+    {
+      "method": "GET",
+      "path": "/admin/system/reset",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/admin/system/reset",
+      "status": 302
+    }
+  ],
+  "finalPath": "/oauth2/authorize"
+}

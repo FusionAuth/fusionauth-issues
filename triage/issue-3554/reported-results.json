@@ -1,0 +1,51 @@
+{
+  "base": "http://localhost:9012",
+  "before": {
+    "version": "1.68.0",
+    "defaultTenantId": "63250f74-88ed-44ef-9f71-40b7ad326227",
+    "defaultAccessTokenKeyId": "7fd22eae-5ae4-4d92-b78e-d10225ec3b52",
+    "tenantManagerApplicationId": "1b54c5f1-cf53-47a0-b5ff-bb1139b2edf6",
+    "tenantManagerAccessTokenKeyId": "866a3a09-1ded-43cb-a9e7-8f26c24f9c91",
+    "tenantManagerIdTokenKeyId": "80ccfe1e-209e-1725-bb37-6c4214dea375",
+    "tenantManagerJwtEnabled": true,
+    "sharesDefaultAccessTokenKey": false
+  },
+  "after": {
+    "version": "1.68.0",
+    "defaultTenantId": "63250f74-88ed-44ef-9f71-40b7ad326227",
+    "defaultAccessTokenKeyId": "966e747f-f402-4abf-9e15-8ef68acbc97b",
+    "tenantManagerApplicationId": "1b54c5f1-cf53-47a0-b5ff-bb1139b2edf6",
+    "tenantManagerAccessTokenKeyId": "966e747f-f402-4abf-9e15-8ef68acbc97b",
+    "tenantManagerIdTokenKeyId": "80ccfe1e-209e-1725-bb37-6c4214dea375",
+    "tenantManagerJwtEnabled": true,
+    "sharesDefaultAccessTokenKey": true
+  },
+  "resetResponses": [
+    {
+      "method": "GET",
+      "path": "/admin/system/reset/",
+      "status": 202
+    },
+    {
+      "method": "GET",
+      "path": "/admin/system/reset/",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/admin/system/reset",
+      "status": 302
+    },
+    {
+      "method": "GET",
+      "path": "/admin/system/reset",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/admin/system/reset",
+      "status": 302
+    }
+  ],
+  "finalPath": "/oauth2/authorize"
+}
