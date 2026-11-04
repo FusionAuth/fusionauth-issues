@@ -2,7 +2,8 @@
 
 Relates to #3587.
 
-**Verdict:** confirmed  
+**Verdict:** confirmed
+
 **Confidence:** high
 
 The reported null-state registration failure reproduces on both 1.69.4 and
