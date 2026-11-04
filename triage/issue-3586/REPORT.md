@@ -2,7 +2,8 @@
 
 Relates to #3586.
 
-**Verdict:** confirmed  
+**Verdict:** confirmed
+
 **Confidence:** high
 
 Trailing ASCII spaces reproduce HTTP 500 and the reported NullPointerExceptions in both Login and Forgot Password APIs on MySQL, including latest. The hosted pages display the reported error. PostgreSQL rejects the same IDs with HTTP 404.
