@@ -1,0 +1,27 @@
+{"base": "http://localhost:9011", "version": "1.70.0"}
+{"setup": "/api/email/template/35860000-0000-4000-8000-000000000003", "method": "PUT", "status": 200}
+{"setup": "/api/tenant/ac27499e-650f-4b3f-9d35-bdd6bdc75ef8", "status": 200}
+{"setup": "/api/application/35860000-0000-4000-8000-000000000001", "method": "PUT", "status": 200}
+{"setup": "/api/user/registration/35860000-0000-4000-8000-000000000002", "method": "POST", "status": 200}
+{"endpoint": "/api/login", "loginId": "user@example.com", "status": 200, "errors": {}, "emptyBody": false}
+{"endpoint": "/api/user/forgot-password", "loginId": "user@example.com", "status": 200, "errors": {}, "emptyBody": false}
+{"endpoint": "/api/login", "loginId": "USER@EXAMPLE.COM", "status": 200, "errors": {}, "emptyBody": false}
+{"endpoint": "/api/user/forgot-password", "loginId": "USER@EXAMPLE.COM", "status": 200, "errors": {}, "emptyBody": false}
+{"endpoint": "/api/login", "loginId": "user@example.com ", "status": 404, "errors": {}, "emptyBody": true}
+{"endpoint": "/api/user/forgot-password", "loginId": "user@example.com ", "status": 404, "errors": {}, "emptyBody": true}
+{"endpoint": "/api/login", "loginId": "user@example.com  ", "status": 404, "errors": {}, "emptyBody": true}
+{"endpoint": "/api/user/forgot-password", "loginId": "user@example.com  ", "status": 404, "errors": {}, "emptyBody": true}
+{"endpoint": "/api/login", "loginId": "USER@EXAMPLE.COM ", "status": 404, "errors": {}, "emptyBody": true}
+{"endpoint": "/api/user/forgot-password", "loginId": "USER@EXAMPLE.COM ", "status": 404, "errors": {}, "emptyBody": true}
+{"endpoint": "/api/login", "loginId": "username", "status": 200, "errors": {}, "emptyBody": false}
+{"endpoint": "/api/user/forgot-password", "loginId": "username", "status": 200, "errors": {}, "emptyBody": false}
+{"endpoint": "/api/login", "loginId": "username ", "status": 404, "errors": {}, "emptyBody": true}
+{"endpoint": "/api/user/forgot-password", "loginId": "username ", "status": 404, "errors": {}, "emptyBody": true}
+{"endpoint": "/api/login", "loginId": " user@example.com", "status": 404, "errors": {}, "emptyBody": true}
+{"endpoint": "/api/user/forgot-password", "loginId": " user@example.com", "status": 404, "errors": {}, "emptyBody": true}
+{"endpoint": "/api/login", "loginId": "user@example.com\t", "status": 404, "errors": {}, "emptyBody": true}
+{"endpoint": "/api/user/forgot-password", "loginId": "user@example.com\t", "status": 404, "errors": {}, "emptyBody": true}
+{"endpoint": "/api/login", "loginId": "user@example.com\n", "status": 404, "errors": {}, "emptyBody": true}
+{"endpoint": "/api/user/forgot-password", "loginId": "user@example.com\n", "status": 404, "errors": {}, "emptyBody": true}
+{"endpoint": "/api/login", "loginId": "user@example.com\u00a0", "status": 404, "errors": {}, "emptyBody": true}
+{"endpoint": "/api/user/forgot-password", "loginId": "user@example.com\u00a0", "status": 404, "errors": {}, "emptyBody": true}

@@ -1,0 +1,53 @@
+name: issue3586
+
+x-fusionauth: &fusionauth
+  depends_on:
+    mysql:
+      condition: service_healthy
+  networks: [default, internal]
+  volumes:
+    - ../../.github/triage/kickstart:/usr/local/fusionauth/kickstart:ro
+
+x-environment: &environment
+  DATABASE_ROOT_USERNAME: root
+  DATABASE_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:?Set a disposable MySQL root password}
+  DATABASE_USERNAME: fusionauth
+  DATABASE_PASSWORD: ${MYSQL_APP_PASSWORD:?Set a disposable application database password}
+  FUSIONAUTH_APP_MEMORY: 512M
+  FUSIONAUTH_APP_RUNTIME_MODE: development
+  FUSIONAUTH_APP_KICKSTART_FILE: /usr/local/fusionauth/kickstart/kickstart.json
+  SEARCH_TYPE: database
+
+networks:
+  default: {}
+  internal:
+    internal: true
+
+services:
+  mysql:
+    image: mysql:8.0
+    networks: [internal]
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_ROOT_HOST: "%"
+    healthcheck:
+      test: ["CMD-SHELL", "MYSQL_PWD=\"$${MYSQL_ROOT_PASSWORD}\" mysqladmin ping -h localhost -u root --silent"]
+      interval: 5s
+      timeout: 5s
+      retries: 60
+
+  reported:
+    <<: *fusionauth
+    image: fusionauth/fusionauth-app:1.69.4
+    ports: ["127.0.0.1:9013:9011"]
+    environment:
+      <<: *environment
+      DATABASE_URL: jdbc:mysql://mysql:3306/fa_reported?serverTimezone=UTC&allowPublicKeyRetrieval=true&useSSL=false
+
+  latest:
+    <<: *fusionauth
+    image: fusionauth/fusionauth-app:latest
+    ports: ["127.0.0.1:9014:9011"]
+    environment:
+      <<: *environment
+      DATABASE_URL: jdbc:mysql://mysql:3306/fa_latest?serverTimezone=UTC&allowPublicKeyRetrieval=true&useSSL=false

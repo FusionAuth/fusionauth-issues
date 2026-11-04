@@ -1,0 +1,27 @@
+{"base": "http://localhost:9013", "version": "1.69.4"}
+{"setup": "/api/email/template/35860000-0000-4000-8000-000000000003", "method": "PUT", "status": 200}
+{"setup": "/api/tenant/d8170fc4-708e-46f1-9d2b-aafb3d003eec", "status": 200}
+{"setup": "/api/application/35860000-0000-4000-8000-000000000001", "method": "PUT", "status": 200}
+{"setup": "/api/user/registration/35860000-0000-4000-8000-000000000002", "method": "POST", "status": 200}
+{"endpoint": "/api/login", "loginId": "user@example.com", "status": 200, "errors": {}, "emptyBody": false}
+{"endpoint": "/api/user/forgot-password", "loginId": "user@example.com", "status": 200, "errors": {}, "emptyBody": false}
+{"endpoint": "/api/login", "loginId": "USER@EXAMPLE.COM", "status": 200, "errors": {}, "emptyBody": false}
+{"endpoint": "/api/user/forgot-password", "loginId": "USER@EXAMPLE.COM", "status": 200, "errors": {}, "emptyBody": false}
+{"endpoint": "/api/login", "loginId": "user@example.com ", "status": 500, "errors": {"generalErrors": [{"code": "[Exception]", "message": "An unexpected exception occurred."}], "fieldErrors": {}}, "emptyBody": false}
+{"endpoint": "/api/user/forgot-password", "loginId": "user@example.com ", "status": 500, "errors": {"generalErrors": [{"code": "[Exception]", "message": "An unexpected exception occurred."}], "fieldErrors": {}}, "emptyBody": false}
+{"endpoint": "/api/login", "loginId": "user@example.com  ", "status": 500, "errors": {"generalErrors": [{"code": "[Exception]", "message": "An unexpected exception occurred."}], "fieldErrors": {}}, "emptyBody": false}
+{"endpoint": "/api/user/forgot-password", "loginId": "user@example.com  ", "status": 500, "errors": {"generalErrors": [{"code": "[Exception]", "message": "An unexpected exception occurred."}], "fieldErrors": {}}, "emptyBody": false}
+{"endpoint": "/api/login", "loginId": "USER@EXAMPLE.COM ", "status": 500, "errors": {"generalErrors": [{"code": "[Exception]", "message": "An unexpected exception occurred."}], "fieldErrors": {}}, "emptyBody": false}
+{"endpoint": "/api/user/forgot-password", "loginId": "USER@EXAMPLE.COM ", "status": 500, "errors": {"generalErrors": [{"code": "[Exception]", "message": "An unexpected exception occurred."}], "fieldErrors": {}}, "emptyBody": false}
+{"endpoint": "/api/login", "loginId": "username", "status": 200, "errors": {}, "emptyBody": false}
+{"endpoint": "/api/user/forgot-password", "loginId": "username", "status": 200, "errors": {}, "emptyBody": false}
+{"endpoint": "/api/login", "loginId": "username ", "status": 500, "errors": {"generalErrors": [{"code": "[Exception]", "message": "An unexpected exception occurred."}], "fieldErrors": {}}, "emptyBody": false}
+{"endpoint": "/api/user/forgot-password", "loginId": "username ", "status": 500, "errors": {"generalErrors": [{"code": "[Exception]", "message": "An unexpected exception occurred."}], "fieldErrors": {}}, "emptyBody": false}
+{"endpoint": "/api/login", "loginId": " user@example.com", "status": 404, "errors": {}, "emptyBody": true}
+{"endpoint": "/api/user/forgot-password", "loginId": " user@example.com", "status": 404, "errors": {}, "emptyBody": true}
+{"endpoint": "/api/login", "loginId": "user@example.com\t", "status": 404, "errors": {}, "emptyBody": true}
+{"endpoint": "/api/user/forgot-password", "loginId": "user@example.com\t", "status": 404, "errors": {}, "emptyBody": true}
+{"endpoint": "/api/login", "loginId": "user@example.com\n", "status": 404, "errors": {}, "emptyBody": true}
+{"endpoint": "/api/user/forgot-password", "loginId": "user@example.com\n", "status": 404, "errors": {}, "emptyBody": true}
+{"endpoint": "/api/login", "loginId": "user@example.com\u00a0", "status": 404, "errors": {}, "emptyBody": true}
+{"endpoint": "/api/user/forgot-password", "loginId": "user@example.com\u00a0", "status": 404, "errors": {}, "emptyBody": true}

@@ -1,0 +1,13 @@
+{"method":"GET","path":"/oauth2/authorize","status":200}
+{"loginId":"user@example.com "}
+{"screenshot":"05-login-before.png"}
+{"method":"POST","path":"/oauth2/authorize","status":200}
+{"flow":"login","error":"An unexpected exception occurred."}
+{"screenshot":"06-login-after.png"}
+{"method":"GET","path":"/oauth2/authorize","status":200}
+{"method":"GET","path":"/password/forgot","status":200}
+{"loginId":"user@example.com "}
+{"screenshot":"07-forgot-before.png"}
+{"method":"POST","path":"/password/forgot","status":200}
+{"flow":"forgot-password","error":"An unexpected exception occurred."}
+{"screenshot":"08-forgot-after.png"}
