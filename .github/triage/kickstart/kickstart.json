@@ -1,0 +1,30 @@
+{
+  "variables": {
+    "apiKey": "5b1d4f2a-8c3e-4a97-b6d1-2f0e9a7c4d33",
+    "adminEmail": "admin@example.com",
+    "adminPassword": "password"
+  },
+  "apiKeys": [
+    {
+      "key": "#{apiKey}",
+      "description": "Triage agent. Throwaway CI instance only; not a real secret."
+    }
+  ],
+  "requests": [
+    {
+      "method": "POST",
+      "url": "/api/user/registration",
+      "body": {
+        "user": {
+          "email": "#{adminEmail}",
+          "password": "#{adminPassword}",
+          "data": { "name": "Triage Admin" }
+        },
+        "registration": {
+          "applicationId": "#{FUSIONAUTH_APPLICATION_ID}",
+          "roles": ["admin"]
+        }
+      }
+    }
+  ]
+}

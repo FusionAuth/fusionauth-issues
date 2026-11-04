@@ -1,0 +1,48 @@
+# OPTIONAL: only for trying Copilot coding agent as the triage engine.
+# Delete this file and copilot-instructions.md if you only use triage-bug.yml.
+#
+# Must live on the default branch, and the job must be named `copilot-setup-steps`.
+# These steps run before the agent starts, so the agent finds FusionAuth already running.
+name: "Copilot Setup Steps"
+
+on:
+  workflow_dispatch:
+  push:
+    paths: [.github/workflows/copilot-setup-steps.yml]
+  pull_request:
+    paths: [.github/workflows/copilot-setup-steps.yml]
+
+jobs:
+  copilot-setup-steps:
+    # FusionAuth + OpenSearch + Chromium are memory hungry. If the agent's environment struggles,
+    # point this at a larger runner label (e.g. ubuntu-4-core) per the Copilot docs.
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Prepare host for the search engine
+        run: sudo sysctl -w vm.max_map_count=262144
+
+      - name: Start FusionAuth (latest), Postgres, OpenSearch
+        run: docker compose -p triage -f .github/triage/docker-compose.yml up -d db search-latest fusionauth-latest
+
+      - name: Wait until FusionAuth answers on :9011
+        run: |
+          for i in $(seq 1 72); do
+            if curl -fs -H "Authorization: 5b1d4f2a-8c3e-4a97-b6d1-2f0e9a7c4d33" \
+                 http://localhost:9011/api/system-configuration >/dev/null; then
+              echo "FusionAuth is ready"; exit 0
+            fi
+            sleep 5
+          done
+          echo "FusionAuth did not become ready"
+          docker compose -p triage -f .github/triage/docker-compose.yml logs --tail 100
+          exit 1
+
+      - name: Install Playwright and Chromium (for admin UI bugs)
+        run: |
+          npm install -g playwright@1.49.1
+          npx playwright install --with-deps chromium

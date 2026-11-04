@@ -1,0 +1,102 @@
+name: triage
+
+networks:
+  # No route to the internet. The sandbox joins ONLY this network by default.
+  internal:
+    internal: true
+
+# One search engine per FusionAuth instance: both instances use the same index names,
+# so they cannot share a cluster.
+#
+# Default engine: OpenSearch 2.11.0, which is what FusionAuth's reference docker-compose uses today.
+# FusionAuth's SEARCH_TYPE value is `elasticsearch` for OpenSearch and Elasticsearch alike.
+# To use Elasticsearch instead (FusionAuth's own compose files have used 7.17.0), edit this anchor:
+#   image: docker.elastic.co/elasticsearch/elasticsearch:7.17.0
+#   environment: keep cluster.name and discovery.type; replace OPENSEARCH_JAVA_OPTS with
+#                ES_JAVA_OPTS: -Xms512m -Xmx512m; delete plugins.security.disabled
+x-search: &search
+  image: opensearchproject/opensearch:2.11.0
+  environment:
+    cluster.name: fusionauth
+    discovery.type: single-node
+    plugins.security.disabled: "true"
+    OPENSEARCH_JAVA_OPTS: -Xms512m -Xmx512m
+  networks: [internal]
+  healthcheck:
+    test: ["CMD-SHELL", "curl -fs http://localhost:9200/_cluster/health || exit 1"]
+    interval: 10s
+    timeout: 5s
+    retries: 30
+
+services:
+  db:
+    image: postgres:16-bookworm
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    networks: [internal]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+
+  search-latest:
+    <<: *search
+
+  search-reported:
+    <<: *search
+    profiles: ["reported"]
+
+  # Always started: the newest public image.
+  fusionauth-latest:
+    image: fusionauth/fusionauth-app:latest
+    depends_on:
+      db:
+        condition: service_healthy
+      search-latest:
+        condition: service_healthy
+    networks: [default, internal]
+    environment:
+      DATABASE_URL: jdbc:postgresql://db:5432/fa_latest
+      DATABASE_ROOT_USERNAME: postgres
+      DATABASE_ROOT_PASSWORD: postgres
+      DATABASE_USERNAME: fa_latest
+      DATABASE_PASSWORD: fusionauth
+      FUSIONAUTH_APP_MEMORY: 512M
+      FUSIONAUTH_APP_RUNTIME_MODE: development
+      FUSIONAUTH_APP_URL: http://fusionauth-latest:9011
+      SEARCH_TYPE: elasticsearch
+      SEARCH_SERVERS: http://search-latest:9200
+      FUSIONAUTH_APP_KICKSTART_FILE: /usr/local/fusionauth/kickstart/kickstart.json
+    volumes:
+      - ./kickstart:/usr/local/fusionauth/kickstart:ro
+    ports:
+      - "9011:9011" # host-side readiness checks only
+
+  # Started only when the issue names a version different from latest.
+  fusionauth-reported:
+    profiles: ["reported"]
+    image: fusionauth/fusionauth-app:${REPORTED_VERSION:-latest}
+    depends_on:
+      db:
+        condition: service_healthy
+      search-reported:
+        condition: service_healthy
+    networks: [default, internal]
+    environment:
+      DATABASE_URL: jdbc:postgresql://db:5432/fa_reported
+      DATABASE_ROOT_USERNAME: postgres
+      DATABASE_ROOT_PASSWORD: postgres
+      DATABASE_USERNAME: fa_reported
+      DATABASE_PASSWORD: fusionauth
+      FUSIONAUTH_APP_MEMORY: 512M
+      FUSIONAUTH_APP_RUNTIME_MODE: development
+      FUSIONAUTH_APP_URL: http://fusionauth-reported:9011
+      SEARCH_TYPE: elasticsearch
+      SEARCH_SERVERS: http://search-reported:9200
+      FUSIONAUTH_APP_KICKSTART_FILE: /usr/local/fusionauth/kickstart/kickstart.json
+    volumes:
+      - ./kickstart:/usr/local/fusionauth/kickstart:ro
+    ports:
+      - "9012:9011"
