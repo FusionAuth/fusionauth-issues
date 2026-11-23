@@ -1,6 +1,7 @@
 # Triage #3604
 
-**Verdict:** inconclusive: requires a license  
+**Verdict:** inconclusive: requires a license
+
 **Confidence:** high for the observations, low for the production cause
 
 ## Environment
