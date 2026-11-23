@@ -64,6 +64,9 @@ async function api(method, endpoint, body) {
   const browser = await chromium.launch({ args: ['--no-sandbox'] });
   try {
     const page = await browser.newPage();
+    await page.route('**/*', route =>
+      new URL(route.request().url()).origin === base ? route.continue() : route.abort()
+    );
     page.on('response', response => {
       const url = new URL(response.url());
       if (url.pathname === '/account/login' || url.pathname === '/oauth2/consent') {
@@ -84,6 +87,12 @@ async function api(method, endpoint, body) {
   } finally {
     await browser.close();
   }
+  const events = (await api('POST', '/api/system/event-log/search', {
+    search: { numberOfResults: 100, startRow: 0, orderBy: 'insertInstant desc' }
+  })).eventLogs || [];
+  const exchange = events.find(event => event.message.includes(app.id) &&
+    event.message.includes('The authorization code has been successfully exchanged for an access token.'));
+  console.log('Matching successful code-exchange event:', Boolean(exchange));
 })().catch(error => {
   console.error(error);
   process.exitCode = 1;
